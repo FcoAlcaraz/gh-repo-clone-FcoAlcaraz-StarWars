@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './components/home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -46,13 +45,14 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { MovieDetailsComponent } from './components/pages/movies/movie-details/movie-details.component';
-import { MoviesListComponent } from './components/pages/movies/movies-list/movies-list.component';
+import { HomeComponent } from './components/home/home.component';
+import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.component';
+import { CharacterDetailsComponent } from './components/pages/characters/character-details/character-details.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    HomeComponent,
+    // HomeComponent,
     MatToolbarModule,
     AppRoutingModule,
     MatCardModule,
@@ -96,12 +96,14 @@ import { MoviesListComponent } from './components/pages/movies/movies-list/movie
   ],
   declarations: [
     AppComponent,
+    HomeComponent,
     HeaderComponent,
+    routingComponents,
+    CharacterDetailsComponent,
     ModalpopupComponent,
-    MovieDetailsComponent,
-    MoviesListComponent,
+    BreadcrumbComponent,
   ],
   exports: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, HeaderComponent],
 })
 export class AppModule {}
