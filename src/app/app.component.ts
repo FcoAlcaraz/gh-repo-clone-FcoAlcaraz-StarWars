@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @Component({
-  imports: [CommonModule, HomeComponent, AppComponent],
+  imports: [CommonModule, HomeComponent, AppComponent, HeaderComponent],
   standalone: true,
   selector: 'app-app',
-  templateUrl: './app.component.html',
+  template: './app/app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {

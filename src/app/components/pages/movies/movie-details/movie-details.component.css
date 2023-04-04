@@ -1,0 +1,78 @@
+* {
+  color: whitesmoke !important;
+  font-size: 20px;
+  font-weight: 100;
+  user-select: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+mat-accordion {
+  width: 100%;
+  padding: 0px;
+  margin: 5px;
+  background-color: none;
+  color: black;
+  font-size: 10px !important;
+}
+
+mat-expansion-panel {
+  background: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.details {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.example-card {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+h6:hover,
+h4:hover {
+  transform: scale(0.98);
+  transition-duration: 1s;
+}
+
+h5,
+h4 {
+  color: yellow !important;
+  cursor: default;
+}
+
+* > p :hover {
+  transform: scale(0.98);
+  transition-duration: 1s;
+}
+
+mat-panel-description {
+  text-align: right;
+  width: 50%;
+}
+.openingCrawlText {
+  font-size: 20px;
+  max-width: 90%;
+  text-align: justify;
+}

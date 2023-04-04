@@ -1,0 +1,179 @@
+.order-Container {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p > button {
+  color: yellow;
+  justify-content: center;
+}
+
+p > button {
+  opacity: 0.3;
+  color: whitesmoke !important;
+  border: 1px solid yellow;
+}
+
+p > button:hover {
+  transform: scale(1);
+  opacity: 1 !important;
+}
+
+p > button:active {
+  transform: scale(0.98);
+}
+
+img {
+  max-height: 70%;
+  width: auto;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  scroll-margin: 10px;
+  transition-duration: 4s;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 254, 49, 0.1);
+  transform: scale(0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 254, 49, 0.7);
+  transform: scale(1);
+  animation-duration: 4s;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 254, 49, 1);
+  transform: scale(1);
+  animation-duration: 2s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+@media screen and (max-width: 2000px) {
+  mat-card-image {
+    max-height: 300px;
+  }
+
+  .card-container {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .example-card,
+  button,
+  mat-list-item,
+  p,
+  mat-card-subtitle {
+    color: whitesmoke !important;
+  }
+
+  .example-card {
+    font-size: smaller;
+    max-width: 400px;
+    margin: 10px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+
+  .example-card:hover {
+    border-color: rgb(249, 255, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.6);
+  }
+
+  mat-card-actions > button {
+    background: none;
+  }
+
+  mat-card-actions > button:hover {
+    color: yellow !important;
+    transform: scale(1.1);
+  }
+
+  .opening_crawl {
+    padding: 0px;
+  }
+
+  p {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-height: 100px !important;
+    text-overflow: ellipsis;
+  }
+
+  .example-header-image {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .example-header-image {
+    background-size: cover;
+  }
+
+  div > img {
+    height: auto;
+    width: auto;
+    /*width: 300px;*/
+    /*max-height: 200px;*/
+  }
+
+  img {
+    height: 400px;
+    width: 300px;
+    /*max-height: 200px;*/
+  }
+
+  .card-container {
+    /*transform:scale(0.90);*/
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0%, 1%, 2%, 1%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .example-card {
+    /*justify-content: space-between;*/
+    /*    height:700% !important;
+      width:auto;*/
+    max-width: auto;
+    /*margin-top: 100px;*/
+  }
+
+  mat-list p {
+    margin-left: 10px;
+  }
+}

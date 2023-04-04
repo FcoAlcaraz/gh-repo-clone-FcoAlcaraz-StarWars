@@ -1,0 +1,62 @@
+mat-card,
+mat-card-header,
+mat-card-title,
+mat-card-subtitle,
+button {
+  background-color: black !important;
+  color: whitesmoke !important;
+}
+
+button {
+  border: 1px solid white;
+}
+
+button:hover {
+  color: yellow !important;
+  border: 1px solid yellow;
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.example-card {
+  font-size: 20px;
+  font-weight: 100;
+  max-width: 800px;
+}
+
+.example-header-image {
+  background-size: 20px;
+  background-size: cover;
+}
+
+#homeword:hover {
+  color: yellow !important;
+  border: 1px solid yellow !important;
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+h6:hover,
+h4:hover {
+  transform: scale(0.98);
+  transition-duration: 1s;
+}
+
+h5,
+h4 {
+  color: yellow !important;
+  cursor: default;
+}
+
+* > p :hover {
+  transform: scale(0.98);
+  transition-duration: 1s;
+}
+
+mat-card-content {
+  display: flex;
+  margin-right: 10px;
+}
+mat-card-content * {
+  margin-right: 10px;
+  justify-content: center;
+}

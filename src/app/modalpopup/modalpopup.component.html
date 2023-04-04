@@ -1,0 +1,28 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img
+        mat-card-image
+        src="{{ imgSrc }}"
+        alt="{{ imgSrc }}"
+        width="40"
+        height="40"
+      />
+    </div>
+    <mat-card-title
+      ><h5>{{ result.data.name }}</h5></mat-card-title
+    >
+  </mat-card-header>
+  <img mat-card-image src="{{ imgSrc }}" alt="{{ imgSrc }}" />
+  <mat-card-content>
+    <h5>Population:</h5>
+    <h6>{{ result.data.population }}</h6>
+    <h5>Climate:</h5>
+    <h6>{{ result.data.climate }}</h6>
+    <h5>Gravity:</h5>
+    <h6>{{ result.data.gravity }}</h6>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button mat-dialog-close>CLOSE</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,37 @@
+#header {
+  display: flex;
+  position: center;
+  z-index: 100000;
+  width: 100%;
+  background-color: none;
+  justify-content: normal;
+  color: yellow !important;
+}
+
+mat-toolbar {
+  background: none;
+}
+
+#header > button {
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  background: none;
+}
+
+#header > button:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+#brand,
+a {
+  margin: 1%;
+  color: yellow !important;
+  text-decoration: none !important;
+}
+
+app-breadcrumb {
+  display: inline-block;
+  color: yellow;
+}

@@ -1,0 +1,50 @@
+<!-- Order button panel -->
+<p class="order-Container">
+  <button mat-button (click)="sortOrderAsc()">
+    <span>ASC </span>
+  </button>
+  <button mat-button (click)="defaultOrder()">
+    <span>NORMAL</span>
+  </button>
+  <button mat-button (click)="sortOrderDesc()">
+    <span>DES</span>
+  </button>
+</p>
+<div class="card-container">
+  <mat-card
+    *ngFor="let film of films; let indexOfelement = index"
+    class="example-card"
+  >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+        <img src="{{ film.src }}" />
+      </div>
+      <mat-card-title>
+        <h5>{{ film.title }}</h5></mat-card-title
+      >
+      <mat-card-subtitle>Episode: No. {{ film.episode_id }} </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ film.src }}" alt="{{ film.title }}" />
+    <mat-card-content class="opening_crawl">
+      <mat-list role="list">
+        <!--<mat-list-item role="listitem">
+        </mat-list-item>-->
+        <p>Release: {{ film.release_date }}</p>
+        <p>Director: {{ film.director }}</p>
+        <p>Producer: {{ film.producer }}</p>
+        <!--<mat-list-item role="listitem">
+        </mat-list-item>
+        <mat-list-item role="listitem">
+        </mat-list-item>-->
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-flat-button
+        routerLink="/movie-details/{{ indexOfelement + 1 }}"
+      >
+        More...
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
