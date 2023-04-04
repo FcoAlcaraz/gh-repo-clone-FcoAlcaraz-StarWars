@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Character } from '../../../../shared/Interfaces/characterInterface';
 import { IMovie } from '../../../../shared/Interfaces/imovie';
+import { Character } from '../../../../shared/Interfaces/characterInterface';
 import { IPlanet } from '../../../../shared/Interfaces/iplanet';
 import { ISpecie } from '../../../../shared/Interfaces/ispecie';
 import { IStarship } from '../../../../shared/Interfaces/istarship';
