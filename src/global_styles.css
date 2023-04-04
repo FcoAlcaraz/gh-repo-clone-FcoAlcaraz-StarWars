@@ -13,7 +13,8 @@
 }
 
 body {
-  background-image: url(../src/assets/imgs/space2-sw.jpg);
+  /* background-image: url(../src/assets/imgs/space2-sw.jpg); */
+  background: black;
   background-size: initial;
   background-repeat: repeat-y;
 }

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import { environment } from '../../../environments/environment.development';
-import { ISpecie } from '../Interfaces/ispecie';
+import { environment } from '../../environments/environment';
+import { ISpecie } from '../interfaces/ispecie';
 
 @Injectable({
   providedIn: 'root',

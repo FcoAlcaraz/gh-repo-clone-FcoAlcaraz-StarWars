@@ -4,9 +4,10 @@ import { ModalpopupComponent } from '../../../../modalpopup/modalpopup.component
 import { IMovie } from '../../../../shared/interfaces/imovie';
 
 import { MoviesService } from '../../../../shared/services/movies.service';
+import { MovieImages } from '../MoviesImagesData';
 
 @Component({
-  standalone: true,
+  // standalone: true,
   selector: 'app-movies-list',
   templateUrl: './movies-list.component.html',
   styleUrls: ['./movies-list.component.scss'],

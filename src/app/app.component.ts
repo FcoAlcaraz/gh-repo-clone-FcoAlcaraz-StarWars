@@ -4,8 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 
 @Component({
-  imports: [CommonModule, HomeComponent, AppComponent, HeaderComponent],
-  standalone: true,
+  // imports: [CommonModule, HomeComponent, AppComponent, HeaderComponent],
+  // standalone: true,
   selector: 'app-app',
   template: './app/app.component.html',
   styleUrls: ['./app.component.css'],

@@ -1,11 +1,9 @@
-import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { asyncScheduler, AsyncSubject, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Breadcrumb } from '../../../models/bread-crumb';
 import { BreadcrumbService } from '../../services/breadcrumb.service';
 
 @Component({
-
   // standalone: true,
   selector: 'app-breadcrumb',
   templateUrl: './breadcrumb.component.html',
