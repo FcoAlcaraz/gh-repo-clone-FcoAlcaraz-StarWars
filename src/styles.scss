@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  transition-duration: 1s;
+  user-select: none;
+}
+
+body {
+  background-image: url(../src/assets/imgs/space2-sw.jpg);
+  background-size: initial;
+  background-repeat: repeat-y;
+}
+h6:hover,
+h4:hover {
+  transform: scale(0.98);
+  transition-duration: 1s;
+}
+
+h5,
+h4 {
+  color: yellow !important;
+  cursor: default;
+}
+* > p :hover {
+  transform: scale(0.98);
+  transition-duration: 1s;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  scroll-margin: 10px;
+  transition-duration: 4s;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 254, 49, 0.1);
+  transform: scale(0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 254, 49, 0.7);
+  transform: scale(1);
+  animation-duration: 4s;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 254, 49, 1);
+  transform: scale(1);
+  animation-duration: 2s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}

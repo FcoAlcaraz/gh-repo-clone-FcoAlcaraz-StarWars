@@ -2,11 +2,11 @@ import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { HomeComponent } from './app/home/home.component';
 import { AppComponent } from './app/app.component';
 import { HeaderComponent } from './app/shared/components/header/header.component';
 import { BreadcrumbComponent } from './app/shared/components/breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './app/components/home/home.component';
 
 @Component({
   selector: 'my-app',
@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     AppComponent,
     HeaderComponent,
-   // BreadcrumbComponent,
+    // BreadcrumbComponent,
     RouterModule,
   ],
   templateUrl: `./app/app.component.html`,
