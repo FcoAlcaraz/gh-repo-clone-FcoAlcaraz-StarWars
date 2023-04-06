@@ -1,3 +1,94 @@
-<p>
-character-details works!
-</p>
+<div class="grid-container">
+  <div id="Character-image" class="grid-item">
+    <img mat-card-image src="{{ character?.src }}" alt="" />
+  </div>
+  <div class="grid-item">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title> <h5>Character Info</h5></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item>
+            <h5>Name:</h5>
+            <h6>{{ character?.name }}</h6>
+          </mat-list-item>
+          <mat-list-item>
+            <h5>Birth year:</h5>
+            <h6>{{ character?.birth_year }}</h6>
+          </mat-list-item>
+          <mat-list-item>
+            <h5>Edited:</h5>
+            <h6>{{ character?.edited }}</h6>
+          </mat-list-item>
+          <mat-list-item>
+            <h5>Homeworld:</h5>
+            <h6 (click)="openDialog(planet)" id="homeword">
+              {{ planet?.name }}
+            </h6>
+          </mat-list-item>
+          <mat-list-item>
+            <h5>Gender:</h5>
+            <h6>{{ character?.gender }}</h6>
+          </mat-list-item>
+        </mat-list>
+        <mat-accordion>
+          <!--Films-->
+          <mat-expansion-panel
+            (opened)="panelFilmsOpenState = true"
+            (closed)="panelFilmsOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h4>Movies:</h4>
+              </mat-panel-title>
+              <mat-panel-description>
+                View...{{ panelFilmsOpenState ? 'Less...' : 'More' }}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p *ngFor="let movie of movies">
+              Epidose {{ movie?.episode_id }}: {{ movie?.title }}
+            </p>
+          </mat-expansion-panel>
+          <!--Body-->
+          <mat-expansion-panel
+            (opened)="panelBodySpecsOpenState = true"
+            (closed)="panelBodySpecsOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h4>Body Specs:</h4>
+              </mat-panel-title>
+              <mat-panel-description>
+                <h6>
+                  View...{{ panelBodySpecsOpenState ? 'Less...' : 'More' }}
+                </h6>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Height: {{ character?.height }}</p>
+            <p>Eye color: {{ character?.eye_color }}</p>
+            <p>Skin color: {{ character?.skin_color }}</p>
+            <p>Mass: {{ character?.mass }}</p>
+          </mat-expansion-panel>
+          <!--Species-->
+          <mat-expansion-panel
+            (opened)="panelSpeciesOpenState = true"
+            (closed)="panelSpeciesOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h4>Species:</h4>
+              </mat-panel-title>
+              <mat-panel-description>
+                View...{{ panelSpeciesOpenState ? 'Less...' : 'More' }}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p *ngFor="let specie of movieSpecies">
+              {{ specie.name ? specie.name : 'No data' }}
+            </p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

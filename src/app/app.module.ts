@@ -50,11 +50,13 @@ import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.c
 import { CharacterDetailsComponent } from './components/pages/characters/character-details/character-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviesService } from './shared/services/movies.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     // HomeComponent,
     MatToolbarModule,
     AppRoutingModule,
