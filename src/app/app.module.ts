@@ -48,10 +48,10 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.component';
 import { CharacterDetailsComponent } from './components/pages/characters/character-details/character-details.component';
-import { HttpClientModule } from '@angular/common/http';
-import { MoviesService } from './shared/services/movies.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { SpinnerComponent } from './shared/components/spinner/spinner.component';
+import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
 @NgModule({
   imports: [
     CommonModule,
@@ -107,6 +107,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CharacterDetailsComponent,
     ModalpopupComponent,
     BreadcrumbComponent,
+    SpinnerComponent,
   ],
   exports: [
     HeaderComponent,
@@ -114,6 +115,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     routingComponents,
     BreadcrumbComponent,
+  ],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoadingInterceptor,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent],
 })
