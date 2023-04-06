@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalpopupComponent } from '../../../../modalpopup/modalpopup.component';
 import { IMovie } from '../../../../shared/Interfaces/imovie';
@@ -11,6 +11,7 @@ import { MovieImages } from '../MoviesImagesData';
   selector: 'app-movies-list',
   templateUrl: './movies-list.component.html',
   styleUrls: ['./movies-list.component.scss'],
+  providers: [MoviesService],
 })
 export class MoviesListComponent {
   films: IMovie[] = [];

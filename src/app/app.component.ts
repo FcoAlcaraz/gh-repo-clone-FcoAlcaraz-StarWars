@@ -7,7 +7,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
   // imports: [CommonModule, HomeComponent, AppComponent, HeaderComponent],
   // standalone: true,
   selector: 'app-app',
-  template: './app/app.component.html',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {

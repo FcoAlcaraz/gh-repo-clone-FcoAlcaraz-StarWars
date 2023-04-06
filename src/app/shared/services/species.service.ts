@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { environment } from '../../environments/environment';
-import { ISpecie } from '../interfaces/ispecie';
+import { ISpecie } from '../Interfaces/ispecie';
 
 @Injectable({
   providedIn: 'root',

@@ -7,7 +7,7 @@ import {
 } from '@angular/router';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { Character } from '../interfaces/characterInterface';
+import { Character } from '../Interfaces/characterInterface';
 
 @Injectable({
   providedIn: 'root',

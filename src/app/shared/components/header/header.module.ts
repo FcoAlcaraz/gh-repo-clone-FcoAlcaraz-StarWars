@@ -4,8 +4,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './header.component';
 
 @NgModule({
-  imports: [CommonModule, MatToolbarModule],
-  declarations: [HeaderComponent],
-  exports: [HeaderComponent, MatToolbarModule],
+  imports: [CommonModule],
+  declarations: [],
+  exports: [],
 })
 export class HeaderModule {}

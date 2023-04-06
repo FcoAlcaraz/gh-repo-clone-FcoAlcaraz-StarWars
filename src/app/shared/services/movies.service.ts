@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Movie } from '../../components/pages/movies/movies';
 import { environment } from '../../environments/environment';
-import { Film } from '../interfaces/ifilmInterface';
+import { Film } from '../Interfaces/ifilmInterface';
 
 @Injectable({
   providedIn: 'root',

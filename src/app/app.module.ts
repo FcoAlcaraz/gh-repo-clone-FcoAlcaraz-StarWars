@@ -48,10 +48,13 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.component';
 import { CharacterDetailsComponent } from './components/pages/characters/character-details/character-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MoviesService } from './shared/services/movies.service';
+
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule,
+    // HttpClientModule,
     // HomeComponent,
     MatToolbarModule,
     AppRoutingModule,
@@ -103,7 +106,13 @@ import { CharacterDetailsComponent } from './components/pages/characters/charact
     ModalpopupComponent,
     BreadcrumbComponent,
   ],
-  exports: [],
-  bootstrap: [AppComponent, HeaderComponent],
+  exports: [
+    HeaderComponent,
+    AppComponent,
+    HomeComponent,
+    routingComponents,
+    BreadcrumbComponent,
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
