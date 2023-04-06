@@ -54,7 +54,7 @@ import { MoviesService } from './shared/services/movies.service';
 @NgModule({
   imports: [
     CommonModule,
-    // HttpClientModule,
+    HttpClientModule,
     // HomeComponent,
     MatToolbarModule,
     AppRoutingModule,
