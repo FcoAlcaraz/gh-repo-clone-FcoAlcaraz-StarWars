@@ -30,12 +30,12 @@ export class CharacterDetailsComponent implements OnInit {
     {
       name: 'Tatooine',
       url: 'https://swapi.dev/api/planets/1/',
-      src: '/assets/imgs/planets/Tatooine.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Tatooine.jpg',
     },
     {
       name: 'Alderaan',
       url: 'https://swapi.dev/api/planets/2/',
-      src: '/assets/imgs/planets/Alderaan.jpeg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Alderaan.jpeg',
     },
     {
       name: 'Yavin IV',
@@ -50,17 +50,17 @@ export class CharacterDetailsComponent implements OnInit {
     {
       name: 'Dagobah',
       url: 'https://swapi.dev/api/planets/5/',
-      src: '/assets/imgs/planets/Dagobah.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Dagobah.jpg',
     },
     {
       name: 'Bespin',
       url: 'https://swapi.dev/api/planets/6/',
-      src: '/assets/imgs/planets/Bespin.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Bespin.jpg',
     },
     {
       name: 'Endor',
       url: 'https://swapi.dev/api/planets/7/',
-      src: '/assets/imgs/planets/Endor.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Endor.jpg',
     },
     {
       name: 'Naboo',
@@ -105,12 +105,12 @@ export class CharacterDetailsComponent implements OnInit {
     {
       name: 'Felucia',
       url: 'https://swapi.dev/api/planets/17/',
-      src: '/assets/imgs/planets/Felucia.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Felucia.jpg',
     },
     {
       name: 'Cato Neimoidia',
       url: 'https://swapi.dev/api/planets/18/',
-      src: '/assets/imgs/planets/CatoNeimoidia.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/CatoNeimoidia.jpg',
     },
     {
       name: 'Saleucami',
@@ -125,12 +125,12 @@ export class CharacterDetailsComponent implements OnInit {
     {
       name: 'Eriadu',
       url: 'https://swapi.dev/api/planets/21/',
-      src: '/assets/imgs/planets/Eriadu.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Eriadu.jpg',
     },
     {
       name: 'Corellia',
       url: 'https://swapi.dev/api/planets/22/',
-      src: '/assets/imgs/planets/Corellia.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Corellia.jpg',
     },
     {
       name: 'Rodia',
@@ -145,12 +145,12 @@ export class CharacterDetailsComponent implements OnInit {
     {
       name: 'Dantooine',
       url: 'https://swapi.dev/api/planets/25/',
-      src: '/assets/imgs/planets/Naboo.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Dantooine.jpg',
     },
     {
       name: 'Bestine IV',
       url: 'https://swapi.dev/api/planets/26/',
-      src: '/assets/imgs/planets/Coruscant.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Coruscant.jpg',
     },
     {
       name: 'Ord Mantell',
@@ -220,7 +220,7 @@ export class CharacterDetailsComponent implements OnInit {
     {
       name: 'Troiken',
       url: 'https://swapi.dev/api/planets/40/',
-      src: '/assets/imgs/planets/Dagobah.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/planets/Dagobah.jpg',
     },
     {
       name: 'Tund',

@@ -13,7 +13,7 @@
 }
 
 body {
-  background-image: url(../src/assets/imgs/space2-sw.jpg);
+  background-image: url('https://cdn.jsdelivr.net/gh/FcoAlcaraz/gh-repo-clone-FcoAlcaraz-StarWars@main/src/app/assets/imgs/space2-sw.jpg');
   /* background: black; */
   background-size: initial;
   background-repeat: repeat-y;
