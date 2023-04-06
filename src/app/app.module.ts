@@ -48,10 +48,10 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.component';
 import { CharacterDetailsComponent } from './components/pages/characters/character-details/character-details.component';
-
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule,
     // HomeComponent,
     MatToolbarModule,
     AppRoutingModule,

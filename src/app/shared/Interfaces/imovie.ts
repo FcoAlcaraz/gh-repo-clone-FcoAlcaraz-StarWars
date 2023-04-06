@@ -1,6 +1,4 @@
-import { Movie } from '../../components/pages/movies/movies';
-
-export interface IMovie extends Movie {
+export interface IMovie {
   src: any;
   characters: string[];
   created: string;

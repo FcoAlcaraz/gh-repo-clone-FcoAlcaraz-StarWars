@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalpopupComponent } from '../../../../modalpopup/modalpopup.component';
-import { IMovie } from '../../../../shared/interfaces/imovie';
+import { IMovie } from '../../../../shared/Interfaces/imovie';
 
 import { MoviesService } from '../../../../shared/services/movies.service';
 import { MovieImages } from '../MoviesImagesData';
