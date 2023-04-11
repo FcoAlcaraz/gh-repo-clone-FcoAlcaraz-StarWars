@@ -49,8 +49,6 @@ const routes: Routes = [
         resolve: { character: CharacterResolverService },
       },
     ],
-    //children: [
-    //],
   },
   {
     path: 'movie-details/:id',

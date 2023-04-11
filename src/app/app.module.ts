@@ -57,7 +57,6 @@ import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
     CommonModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    // HomeComponent,
     MatToolbarModule,
     AppRoutingModule,
     MatCardModule,

@@ -10,7 +10,6 @@ import { CharactersService } from '../../../../shared/services/characters.servic
 import { MoviesService } from '../../../../shared/services/movies.service';
 import { PlanetsService } from '../../../../shared/services/planets.service';
 import { SpeciesService } from '../../../../shared/services/species.service';
-
 import { CharactersImage } from '../CharactersImagesData';
 
 @Component({
@@ -25,7 +24,7 @@ export class CharacterDetailsComponent implements OnInit {
   movies: IMovie[] = [];
   planet: IPlanet;
 
-  //Data for Image movies src
+  //Data for Image planets src
   planetImages = [
     {
       name: 'Tatooine',
@@ -338,6 +337,7 @@ export class CharacterDetailsComponent implements OnInit {
     private matDialog: MatDialog
   ) {}
 
+  //Obtain the route params on component initiation
   ngOnInit() {
     this.route.params.subscribe((params) =>
       this.getCharacterById(params['id'])
@@ -361,12 +361,15 @@ export class CharacterDetailsComponent implements OnInit {
     });
   }
 
+  //GET: Get the character by Url parameter / not in use
   getCharacterByUrl(Url: string) {
     this.charactersService
       .getCharacterByUrl(Url)
       .subscribe((data: Character) => {
         this.character = data;
 
+        //Additional movie information
+        //GET: Species, Movies, Planets
         this.getSpeciesByUrl(data.species);
         this.getMoviesByUrl(data.films);
         this.getPlanetsByUrl(data.homeworld);
@@ -381,7 +384,7 @@ export class CharacterDetailsComponent implements OnInit {
       })
     );
   }
-
+  //GET: get movies related to the selected character
   getMoviesByUrl(movies: string[]) {
     movies.forEach((x) =>
       this.moviesService.getMovieByUrl(x).subscribe((data: any) => {
@@ -390,6 +393,7 @@ export class CharacterDetailsComponent implements OnInit {
     );
   }
 
+  //GET: get planet related to the selected character
   getPlanetsByUrl(planet: string) {
     this.planetService.getPlanetsByUrl(planet).subscribe((data: any) => {
       this.planet = data;
@@ -416,13 +420,14 @@ export class CharacterDetailsComponent implements OnInit {
     return planetSrcImg;
   }
 
+  //GET: Get the src route foreach character and push to character
   addcharacterImgsSrc(character: any) {
     let imgcharacterSrc = this.getMovieImg(character);
     character.src = imgcharacterSrc;
-    //console.log("addcharacterImgsSrc",character)
     return character;
   }
 
+  //GET: Get the character image src
   getMovieImg(character: any) {
     let characterSrcImg = CharactersImage.find(
       (characters) => characters.url === character.url
